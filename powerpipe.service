@@ -1,0 +1,11 @@
+[Unit]
+Description=Powerpipe Server
+
+[Service]
+User=powerpipe
+WorkingDirectory=/home/powerpipe/powerpipe
+ExecStart=powerpipe server
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
